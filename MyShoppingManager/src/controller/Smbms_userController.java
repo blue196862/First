@@ -84,6 +84,7 @@ public class Smbms_userController {
 	public String getAll(HttpServletRequest request){
 		List<Smbms_user> list = ss.getAll();
 		request.getSession().setAttribute("list", list);
+		System.out.println("sssssssssss");
 		return "user_menu.jsp";
 	}
 	@RequestMapping("/delUser")
